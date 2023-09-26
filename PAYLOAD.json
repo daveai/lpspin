@@ -1,0 +1,15 @@
+{
+    "tokens":[
+        {
+            "address":"0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
+            "amountUSD":10
+         },
+        {
+          "address":"0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+          "amountUSD":10
+       }
+    ],
+    "fee":3000,
+    "tickLower":-887220,
+    "tickUpper":887220
+ }
