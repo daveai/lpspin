@@ -79,18 +79,18 @@ if __name__ == "__main__":
     sqrt_price = int(sqrtPriceX96(price0 / price1))
 
     # Amounts to LP
-    amount0 = int(price0 / token0["amountUSD"] * 10**18)
-    amount1 = int(price1 / token1["amountUSD"] * 10**18)
+    amount0 = int(token0["amountUSD"] / price0 * 10**18)
+    amount1 = int(token1["amountUSD"] / price1 * 10**18)
 
     # Approve the tokens
     approve(
         token0["address"],
-        115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        amount0,
     )
     time.sleep(1)
     approve(
         token1["address"],
-        115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        amount1,
     )
     time.sleep(1)
 
@@ -124,8 +124,8 @@ if __name__ == "__main__":
             p["tickUpper"],
             amount0,
             amount1,
-            0,
-            0,
+            int(amount0 * 0.97),
+            int(amount1 * 0.97),
             Web3.to_checksum_address(p["receiver"]),
             timestamp,
         )
