@@ -1,15 +1,16 @@
 {
     "tokens":[
-        {
-            "address":"0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
-            "amountUSD":10
+         {
+            "address":"0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+            "amountUSD":4
          },
-        {
-          "address":"0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
-          "amountUSD":10
-       }
+         {
+            "address":"0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+            "amountUSD":4
+         }
     ],
     "fee":3000,
     "tickLower":-887220,
-    "tickUpper":887220
+    "tickUpper":887220,
+    "receiver": "0xff064A83331b92F16B7D590CDA2A9E23B410FC07"
  }
